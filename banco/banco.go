@@ -6,7 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// Cocectar retorna um ponteiro de sql que sera nosso banco e um erro
+// Conectar retorna um ponteiro de sql, que sera nosso banco, e um erro.
 func Conectar() (*sql.DB, error) {
 	stringConexao := "golang:golang@/devbook?charset=utf8&parseTime=True&loc=Local"
 

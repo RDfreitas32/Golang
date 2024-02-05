@@ -28,6 +28,7 @@ func CriarUsuario(w http.ResponseWriter, r *http.Request) {
 	}
 
 	var usuario usuario
+
 	// & == referencia de memoria do usuario
 	if erro = json.Unmarshal(corpoRequisicao, &usuario); erro != nil {
 		w.Write([]byte("Erro ao converter o usuário para struct"))
